@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.List;
@@ -59,11 +60,13 @@ public class FeedAdapter extends ArrayAdapter {
         final TextView tvName;
         final TextView tvArtist;
         final TextView tvSummary;
+        final ImageView ivIcon;
 
         ViewHolder(View v) {
             this.tvName = (TextView) v.findViewById(R.id.tvName);
             this.tvArtist = (TextView) v.findViewById(R.id.tvArtist);
             this.tvSummary = (TextView) v.findViewById(R.id.tvSummary);
+            this.ivIcon = (ImageView) v.findViewById(R.id.ivIcon);
         }
     }
 }
